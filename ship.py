@@ -8,7 +8,7 @@ class Ship:
         self.screen = alien_invaders_game.screen
         self.screen_rect = alien_invaders_game.screen.get_rect()
         self.image = pygame.image.load('ship.png')
-        self.scale = 0.1
+        self.scale = self.settings.ship_scale
         original_width, original_height = self.image.get_size()
         new_width = int(original_width * self.scale)
         new_height = int(original_height * self.scale)
